@@ -10,6 +10,8 @@
 		07A41BF31953EB2A00D61372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A41BF21953EB2A00D61372 /* AppDelegate.swift */; };
 		07A41BF51953EB2A00D61372 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A41BF41953EB2A00D61372 /* Images.xcassets */; };
 		07A41C011953EB2A00D61372 /* Yo_KeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A41C001953EB2A00D61372 /* Yo_KeyboardTests.swift */; };
+		07A41C131953EBCF00D61372 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A41C121953EBCF00D61372 /* KeyboardViewController.swift */; };
+		07A41C161953EBCF00D61372 /* uspi.Yo-Keyboard.Yo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 07A41C0E1953EBCF00D61372 /* uspi.Yo-Keyboard.Yo.appex */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,7 +22,35 @@
 			remoteGlobalIDString = 07A41BEC1953EB2A00D61372;
 			remoteInfo = "Yo Keyboard";
 		};
+		07A41C141953EBCF00D61372 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07A41BE51953EB2A00D61372 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07A41C0D1953EBCF00D61372;
+			remoteInfo = Yo;
+		};
+		07A41C171953EBCF00D61372 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07A41BE51953EB2A00D61372 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07A41C0D1953EBCF00D61372;
+			remoteInfo = Yo;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		07A41C1C1953EBCF00D61372 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				07A41C161953EBCF00D61372 /* uspi.Yo-Keyboard.Yo.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		07A41BED1953EB2A00D61372 /* Yo Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yo Keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +60,9 @@
 		07A41BFA1953EB2A00D61372 /* Yo KeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yo KeyboardTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A41BFF1953EB2A00D61372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07A41C001953EB2A00D61372 /* Yo_KeyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yo_KeyboardTests.swift; sourceTree = "<group>"; };
+		07A41C0E1953EBCF00D61372 /* uspi.Yo-Keyboard.Yo.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "uspi.Yo-Keyboard.Yo.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07A41C111953EBCF00D61372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07A41C121953EBCF00D61372 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +80,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		07A41C0B1953EBCF00D61372 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +95,7 @@
 			children = (
 				07A41BEF1953EB2A00D61372 /* Yo Keyboard */,
 				07A41BFD1953EB2A00D61372 /* Yo KeyboardTests */,
+				07A41C0F1953EBCF00D61372 /* Yo */,
 				07A41BEE1953EB2A00D61372 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +105,7 @@
 			children = (
 				07A41BED1953EB2A00D61372 /* Yo Keyboard.app */,
 				07A41BFA1953EB2A00D61372 /* Yo KeyboardTests.xctest */,
+				07A41C0E1953EBCF00D61372 /* uspi.Yo-Keyboard.Yo.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +145,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		07A41C0F1953EBCF00D61372 /* Yo */ = {
+			isa = PBXGroup;
+			children = (
+				07A41C121953EBCF00D61372 /* KeyboardViewController.swift */,
+				07A41C101953EBCF00D61372 /* Supporting Files */,
+			);
+			path = Yo;
+			sourceTree = "<group>";
+		};
+		07A41C101953EBCF00D61372 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07A41C111953EBCF00D61372 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,10 +172,13 @@
 				07A41BE91953EB2A00D61372 /* Sources */,
 				07A41BEA1953EB2A00D61372 /* Frameworks */,
 				07A41BEB1953EB2A00D61372 /* Resources */,
+				07A41C1C1953EBCF00D61372 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				07A41C151953EBCF00D61372 /* PBXTargetDependency */,
+				07A41C181953EBCF00D61372 /* PBXTargetDependency */,
 			);
 			name = "Yo Keyboard";
 			productName = "Yo Keyboard";
@@ -141,6 +203,23 @@
 			productReference = 07A41BFA1953EB2A00D61372 /* Yo KeyboardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		07A41C0D1953EBCF00D61372 /* Yo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07A41C191953EBCF00D61372 /* Build configuration list for PBXNativeTarget "Yo" */;
+			buildPhases = (
+				07A41C0A1953EBCF00D61372 /* Sources */,
+				07A41C0B1953EBCF00D61372 /* Frameworks */,
+				07A41C0C1953EBCF00D61372 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yo;
+			productName = Yo;
+			productReference = 07A41C0E1953EBCF00D61372 /* uspi.Yo-Keyboard.Yo.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -156,6 +235,9 @@
 					07A41BF91953EB2A00D61372 = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = 07A41BEC1953EB2A00D61372;
+					};
+					07A41C0D1953EBCF00D61372 = {
+						CreatedOnToolsVersion = 6.0;
 					};
 				};
 			};
@@ -173,6 +255,7 @@
 			targets = (
 				07A41BEC1953EB2A00D61372 /* Yo Keyboard */,
 				07A41BF91953EB2A00D61372 /* Yo KeyboardTests */,
+				07A41C0D1953EBCF00D61372 /* Yo */,
 			);
 		};
 /* End PBXProject section */
@@ -187,6 +270,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		07A41BF81953EB2A00D61372 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07A41C0C1953EBCF00D61372 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -212,6 +302,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		07A41C0A1953EBCF00D61372 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A41C131953EBCF00D61372 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -219,6 +317,16 @@
 			isa = PBXTargetDependency;
 			target = 07A41BEC1953EB2A00D61372 /* Yo Keyboard */;
 			targetProxy = 07A41BFB1953EB2A00D61372 /* PBXContainerItemProxy */;
+		};
+		07A41C151953EBCF00D61372 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07A41C0D1953EBCF00D61372 /* Yo */;
+			targetProxy = 07A41C141953EBCF00D61372 /* PBXContainerItemProxy */;
+		};
+		07A41C181953EBCF00D61372 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07A41C0D1953EBCF00D61372 /* Yo */;
+			targetProxy = 07A41C171953EBCF00D61372 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -360,6 +468,32 @@
 			};
 			name = Release;
 		};
+		07A41C1A1953EBCF00D61372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Yo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "uspi.Yo-Keyboard.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		07A41C1B1953EBCF00D61372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Yo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "uspi.Yo-Keyboard.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -385,6 +519,14 @@
 			buildConfigurations = (
 				07A41C081953EB2A00D61372 /* Debug */,
 				07A41C091953EB2A00D61372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		07A41C191953EBCF00D61372 /* Build configuration list for PBXNativeTarget "Yo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07A41C1A1953EBCF00D61372 /* Debug */,
+				07A41C1B1953EBCF00D61372 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

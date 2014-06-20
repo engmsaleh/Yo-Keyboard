@@ -231,6 +231,7 @@
 				TargetAttributes = {
 					07A41BEC1953EB2A00D61372 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = D5S987Z34R;
 					};
 					07A41BF91953EB2A00D61372 = {
 						CreatedOnToolsVersion = 6.0;
@@ -415,9 +416,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Yo Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -426,9 +430,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Yo Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -513,6 +520,7 @@
 				07A41C061953EB2A00D61372 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07A41C071953EB2A00D61372 /* Build configuration list for PBXNativeTarget "Yo KeyboardTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +529,7 @@
 				07A41C091953EB2A00D61372 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07A41C191953EBCF00D61372 /* Build configuration list for PBXNativeTarget "Yo" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +538,7 @@
 				07A41C1B1953EBCF00D61372 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
